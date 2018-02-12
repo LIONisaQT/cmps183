@@ -9,20 +9,12 @@ body {
   grid-area: header;
 }
 
-.centerUL {
-  margin: 0;
-}
-
 .sidebar {
   background-color: cyan;
   grid-area: sidebar;
 }
 
-.sidebar > h3 {
-  margin: 0;
-}
-
-.sidebar > p {
+.sidebar > h3, .sidebar > p, .centerUL, .left-column > h2, .left-colum > p {
   margin: 0;
 }
 
@@ -31,11 +23,7 @@ body {
   grid-area: info;
 }
 
-.info > p {
-  margin: 0;
-}
-
-.info > h2 {
+.info > p, .info > h2 {
   margin: 0;
 }
 
@@ -56,13 +44,10 @@ body {
     'header header header header header header'
     'sidebar info info info info info'
     'footer footer footer footer footer footer';
-  /*grid-gap: 10px;*/
-  /*background-color: #2196F3;*/
 }
 
 .grid-container > div {
   padding: 12px;
-  /*backgrounds-color: rgba(255, 255, 255, 0.8);*/
 }
 
 .grid-container-info {
@@ -70,17 +55,8 @@ body {
   grid-template-columns: 300px 1fr;
   grid-gap: 8px;
 }
-
-.left-column > h2 {
-  margin: 0;
-}
-
 .left-column > h3 {
   margin: 12px 0 0 0;
-}
-
-.left-column > p {
-  margin: 0;
 }
 
 .right-column > h3 {
@@ -90,4 +66,21 @@ body {
 .centerUL li {
   display: inline;
   margin: 0 2%;
+}
+
+textarea {
+  width: 453px;
+  height: 150px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  margin-top: 12px;
+}
+
+.hidden {
+  display: none;
 }
