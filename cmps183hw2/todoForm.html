@@ -1,5 +1,6 @@
 <head>
   <title>To Do Form</title>
+  <script type='text/javascript' src='scripts/submit.js' ></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <meta charset="utf-8">
 </head>
@@ -7,7 +8,7 @@
   <div class="grid-container">
     <div class="header" style="text-align: center">
       <div id="title">
-        <h1>cmps183: Homework 1</h1>
+        <h1>cmps183: Homework 2</h1>
       </div>
       <div id="navbar">
         <ul class="centerUL">
@@ -24,14 +25,14 @@
       </p>
     </div>
     <div class="info">
-      <form>
+      <form id="form" action="todo.html">
         Task title:<br />
-        <input type="text" name="taskTitle" size="60"/><br />
+        <input id="title" type="text" name="taskTitle" size="60"/><br />
         Notes:<br />
-        <textarea></textarea><br />
+        <textarea id="notes"></textarea><br />
         Due date:<br />
-        <input type="date" name="dueDate" /><br /><br />
-        <input type="submit" value="submit" />
+        <input id="date" type="date" name="dueDate"><br /><br />
+        <input type="submit" onclick="sendData()" value="submit" />
       </form>
     </div>
     <div class="footer">

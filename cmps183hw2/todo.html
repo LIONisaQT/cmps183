@@ -4,11 +4,11 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <meta charset="utf-8">
 </head>
-<body>
+<body onload="loadTasks()">
   <div class="grid-container">
     <div class="header" style="text-align: center">
       <div id="title">
-        <h1>cmps183: Homework 1</h1>
+        <h1>cmps183: Homework 2</h1>
       </div>
       <div id="navbar">
         <ul class="centerUL">
@@ -21,48 +21,32 @@
     <div class="sidebar">
       <h3>Notes</h3>
       <p>
-        This part was mostly logic, so I just talked myself through what the features I needed to implement, and implemented them. The only things I had to look up were how to see if a checkbox is checked, and how to add/remove classes.
+        I found tutorials on how to add rows to tables with Javascript, which is all I really needed to display tasks from local storage.
       </p>
     </div>
     <div class="info">
       <button onclick="showAll()">Show all</button>
       <button onclick="showCompleted()">Show completed</button>
       <button onClick="showToDo()">Show to do</button>
-      <table>
+      <button onClick="">Posted date ascending</button>
+      <button onClick="">Posted date decending</button>
+      <button onClick="">Updated date ascending</button>
+      <button onClick="">Updated date decending</button>
+      <button onClick="">Due date ascending</button>
+      <button onClick="">Due date decending</button>
+      <table id="table">
         <thead>
           <tr>
             <th>Task title</th>
             <th>Notes</th>
-            <th>Due dates</th>
+            <th>Due date</th>
+            <th>Post date</th>
+            <th>Last updated</th>
+            <th>Edit</th>
+            <th>Delete</th>
             <th>Complete?</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="task">
-            <td>Make memes</td>
-            <td>Wow much dank wow</td>
-            <td>04/20/2018</td>
-            <td><input type="checkbox" class="taskCheckbox" checked/></td>
-          </tr>
-          <tr class="task">
-            <td>Find shibefren</td>
-            <td>So love much single</td>
-            <td>02/14/2018</td>
-            <td><input type="checkbox" class="taskCheckbox"/></td>
-          </tr>
-          <tr class="task">
-            <td>Bork at cats</td>
-            <td>Such awoo vvv loud bork</td>
-            <td>02/22/2018</td>
-            <td><input type="checkbox" class="taskCheckbox" checked/></td>
-          </tr>
-          <tr class="task">
-            <td>Hang with other fren shibe</td>
-            <td>Wow so fren much comrade</td>
-            <td>04/20/2018</td>
-            <td><input type="checkbox" class="taskCheckbox"/></td>
-          </tr>
-        </tbody>
       </table>
     </div>
     <div class="footer">
