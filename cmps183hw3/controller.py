@@ -148,4 +148,5 @@ def delete(id):
     conn.commit()
     redirect("/list")
 
-run(port=9000, debug=True, reloader=True)
+# run(debug=True, reloader=True)
+run()
