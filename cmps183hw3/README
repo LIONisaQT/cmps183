@@ -1,0 +1,3 @@
+In case todo.db doesn't exist, run 'python maketodo.py'.
+Make sure bottle.py exists in the directory.
+To run the homework, run 'python controller.py'.

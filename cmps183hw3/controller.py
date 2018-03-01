@@ -131,6 +131,7 @@ def edit(id):
 
     new_status = (1 if new_status == 'closed' else 0)
 
+    # Update task in database
     conn = sqlite3.connect('todo.db')
     c = conn.cursor()
     currTime = datetime.datetime.now()
@@ -148,5 +149,5 @@ def delete(id):
     conn.commit()
     redirect("/list")
 
-# run(debug=True, reloader=True)
-run()
+run(debug=True, reloader=True)
+# run()
