@@ -1,5 +1,5 @@
 <head>
-  <title>New</title>
+  <title>Editing Task #{{id}}</title>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <meta charset="utf-8">
 </head>
@@ -13,14 +13,14 @@
         <ul class="centerUL">
           <li><a href="../index">Home</a></li>
           <li><a href="../list">To Do List</a></li>
-          <li><a href="../new">To Do Form</a></li>
+          <li><a href="../new">Make New Task</a></li>
         </ul>
       </div>
     </div>
     <div class="sidebar">
       <h3>Notes</h3>
       <p>
-        Reused form from homework 2 for this part.
+        Modified version of Prof. Jullig's edit_task.tpl, with my form from homework 2.
       </p>
     </div>
     <div class="info">
@@ -32,14 +32,12 @@
       %    open_selected = "true"
       %end
       <form action="/edit/{{id}}" method="post">
-        Editing task #{{id}}<br />
+        Editing task #{{id}} -- Posted: {{posted}} -- Last updated: {{updated}}<br />
         <input id="title" type="text" name="title" value="{{old_title}}" size="60" maxlength="100"/><br />
         Description:<br />
         <textarea id="notes" name="desc">{{old_desc}}</textarea><br />
         Due date:<br />
         <input type="date" name="due" value="{{old_due}}"><br />
-        Due time:<br />
-        <input type="time" name="time"><br />
         Status:<br />
         <select name="status">
           %if old_status == 0:

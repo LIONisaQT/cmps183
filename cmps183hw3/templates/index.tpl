@@ -13,14 +13,14 @@
         <ul class="centerUL">
           <li><a href="index">Home</a></li>
           <li><a href="list">To Do List</a></li>
-          <li><a href="new">To Do Form</a></li>
+          <li><a href="new">Make New Task</a></li>
         </ul>
       </div>
     </div>
     <div class="sidebar">
       <h3>Notes</h3>
       <p>
-        There are some YouTube and written tutorials on how to use Bottle, which I followed to make the homepage.
+        There are some YouTube and written tutorials on how to use Bottle, which I followed to set up the routing. This home page is taken from my homework 2.
       </p>
     </div>
     <div class="info">

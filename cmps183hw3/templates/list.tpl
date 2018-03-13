@@ -3,7 +3,6 @@
 
 <head>
   <title>List</title>
-  <script type='text/javascript' src='/scripts/todo.js' ></script>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <meta charset="utf-8">
 </head>
@@ -17,14 +16,14 @@
         <ul class="centerUL">
             <li><a href="index">Home</a></li>
             <li><a href="list">To Do List</a></li>
-            <li><a href="new">To Do Form</a></li>
+            <li><a href="new">Make New Task</a></li>
         </ul>
       </div>
     </div>
     <div class="sidebar">
       <h3>Notes</h3>
       <p>
-        I found tutorials on how to add rows to tables with Javascript, which is all I really needed to display tasks from local storage.
+        Modified version of Prof. Jullig's todo.tpl, with my table from homework 2. No filtering by ascending or descending dates implemented. Checkboxes are only truly editable within /edit/id, (un)checking here will not do anything. However, you can filter by (un)finished tasks no problem. Just select which sorting method at the top, and then press "filter".
       </p>
     </div>
     <div class="info">
@@ -37,8 +36,8 @@
             <fieldset>
                 <legend>Task Filter</legend>
                 <input type="radio" name="filter" value="all" {{allchecked}}/>All Tasks
-                <input type="radio" name="filter" value="done" {{donechecked}}/>Done Tasks
-                <input type="radio" name="filter" value="tbd" {{tbdchecked}}/>TBD Tasks
+                <input type="radio" name="filter" value="done" {{donechecked}}/>Finished Tasks
+                <input type="radio" name="filter" value="tbd" {{tbdchecked}}/>Unfinished Tasks
             </fieldset>
             <br/>
             <input id="filterbtn" type="submit" value="Filter" />

@@ -1,6 +1,5 @@
 <head>
-  <title>New</title>
-  <script type='text/javascript' src='/scripts/submit.js' ></script>
+  <title>Creating New Task</title>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <meta charset="utf-8">
 </head>
@@ -14,14 +13,14 @@
         <ul class="centerUL">
             <li><a href="index">Home</a></li>
             <li><a href="list">To Do List</a></li>
-            <li><a href="new">To Do Form</a></li>
+            <li><a href="new">Make New Task</a></li>
         </ul>
       </div>
     </div>
     <div class="sidebar">
       <h3>Notes</h3>
       <p>
-        Reused form from homework 2 for this part.
+        Modified version of Prof. Jullig's new_task.tpl, with my form from homework 2.
       </p>
     </div>
     <div class="info">
@@ -31,9 +30,7 @@
         Description:<br />
         <textarea id="notes" name="description"></textarea><br />
         Due date:<br />
-        <input type="date" name="due"><br />
-        Due time:<br />
-        <input type="time" name="time"><br /><br />
+        <input type="date" name="due"><br /><br />
         <input type="submit" name="save" value="save">
       </form>
     </div>
